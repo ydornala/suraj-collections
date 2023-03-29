@@ -4,7 +4,8 @@
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "netlify-lambda build express",
+    "build:tsc": "npx tsc",
     "start": "nodemon server-local.js"
   },
   "repository": {
